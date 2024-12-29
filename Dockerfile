@@ -1,4 +1,4 @@
-FROM php:7.2-alpine
+FROM php:8.0-alpine
 
 COPY www /var/www/
 
