@@ -5,10 +5,10 @@ $keypath = '/var/keys/';
 // ----------------------------------------------------------------------------
 // https://www.example.com/nsupdate/nsupdate.php?ip=<ipaddr>&server=ns1.hw33.de&zone=hw33.de.&domain=*.hw33.de.&key=Khw33.de.%2B123%2B45678
 
-// https://dnsupdate.andreas-server.de/nsupdate.php?ip=<ipaddr>&server=ns1.andreas-server.de&zone=andreas-server.de.&domain=*.andreas-server.de.&key=Kglobalkey-andreas-server.de.%2B165%2B63728
-// http://dnsupdate.andreas-server.de/nsupdate.php?ip=8.8.8.8&server=ns1.andreas-server.de&zone=andreas-server.de.&domain=vpn.andreas-server.de.&key=Kglobalkey-andreas-server.de.%2B165%2B63728
-// http://dnsupdate.andreas-server.de/nsupdate.php?ip=93.181.7.231&server=ns1.andreas-server.de&zone=andreas-server.de.&domain=andreas-server.de.&key=Kglobalkey-andreas-server.de.%2B165%2B63728
-// https://dnsupdate.andreas-server.de/nsupdate.php/?server=ns1.andreas-server.de&zone=andreas-server.de.&domain=vpn.andreas-server.de.&key=Kglobalkey-andreas-server.de.%2B165%2B63728&ip6=%IP%
+// https://www.example.com/nsupdate/nsupdate.php?ip=<ipaddr>&server=ns1.andreas-server.de&zone=andreas-server.de.&domain=*.andreas-server.de.&key=Kglobalkey-andreas-server.de.%2B123%2B45678
+// http://www.example.com/nsupdate/nsupdate.php?ip=8.8.8.8&server=ns1.andreas-server.de&zone=andreas-server.de.&domain=vpn.andreas-server.de.&key=Kglobalkey-andreas-server.de.%2B123%2B45678
+// http://www.example.com/nsupdate/nsupdate.php?ip=93.181.7.231&server=ns1.andreas-server.de&zone=andreas-server.de.&domain=andreas-server.de.&key=Kglobalkey-andreas-server.de.%2B123%2B45678
+// https://www.example.com/nsupdate/nsupdate.php/?server=ns1.andreas-server.de&zone=andreas-server.de.&domain=vpn.andreas-server.de.&key=Kglobalkey-andreas-server.de.%2B123%2B45678&ip6=%IP%
 
 $ipv4 = isset($_GET['ip']) ? trim($_GET['ip']) : '';
 if (!empty($ipv4) && !preg_match('/^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/', $ipv4)) {
